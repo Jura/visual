@@ -406,18 +406,7 @@ form,fieldset{
     left: 247px;
     z-index: 1;
 }
-.map li#area9:after{
-    content: "Peru";
-    position: absolute;
-    border: 2px solid #a9a9a9;
-    top: 2px;
-    right: 86.7%;
-    z-index: 1;
-    color: #656767;
-    text-indent: initial;
-    padding: 4px 10px;
-    border-right: none;
-}
+
 .map li#area10 {
     top: 292px;
     left: 328px;
@@ -535,7 +524,12 @@ form,fieldset{
     right: 192px;
     z-index: 2;
 }
-.map li#area18:after{
+.map li#area19 {
+    top: 354px;
+    right: 222px;
+    z-index: 1;
+}
+.map li#area19:after{
     content: "Indonesia";
     position: absolute;
     border: 2px solid #a9a9a9;
@@ -547,11 +541,7 @@ form,fieldset{
     padding: 4px 10px;
     border-left: none;
 }
-.map li#area19 {
-    top: 354px;
-    right: 222px;
-    z-index: 1;
-}
+
 .map li#area20 {
     top: 409px;
     right: 119px;
