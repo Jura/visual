@@ -411,12 +411,12 @@ form,fieldset{
     position: absolute;
     border: 2px solid #a9a9a9;
     top: 2px;
-    left: 86.7%;
+    right: 86.7%;
     z-index: 1;
     color: #656767;
     text-indent: initial;
     padding: 4px 10px;
-    border-left: none;
+    border-right: none;
 }
 .map li#area10 {
     top: 292px;
@@ -484,7 +484,7 @@ form,fieldset{
     left: 502px;
     z-index: 1;
 }
-.map li#area1:after{
+.map li#area15:after{
     content: "Liberia";
     position: absolute;
     border: 2px solid #a9a9a9;
