@@ -402,9 +402,21 @@ form,fieldset{
     z-index: 2;
 }
 .map li#area9 {
-    top: 423px;
-    left: 288px;
+    top: 453px;
+    left: 247px;
     z-index: 1;
+}
+.map li#area9:after{
+    content: "Peru";
+    position: absolute;
+    border: 2px solid #a9a9a9;
+    top: 2px;
+    right: 86.7%;
+    z-index: 1;
+    color: #656767;
+    text-indent: initial;
+    padding: 4px 10px;
+    border-right: none;
 }
 
 .map li#area10 {
