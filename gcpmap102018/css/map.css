@@ -406,6 +406,18 @@ form,fieldset{
     left: 247px;
     z-index: 1;
 }
+.map li#area9:after{
+    content: "Peru";
+    position: absolute;
+    border: 2px solid #a9a9a9;
+    top: 2px;
+    left: 86.7%;
+    z-index: 1;
+    color: #656767;
+    text-indent: initial;
+    padding: 4px 10px;
+    border-left: none;
+}
 .map li#area10 {
     top: 292px;
     left: 328px;
@@ -471,6 +483,18 @@ form,fieldset{
     top: 361px;
     left: 502px;
     z-index: 1;
+}
+.map li#area1:after{
+    content: "Liberia";
+    position: absolute;
+    border: 2px solid #a9a9a9;
+    top: 2px;
+    right: 86.7%;
+    z-index: 1;
+    color: #656767;
+    text-indent: initial;
+    padding: 4px 10px;
+    border-right: none;
 }
 .map li#area16 {
     top: 372px;
