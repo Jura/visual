@@ -401,6 +401,7 @@ form,fieldset{
     left: 278px;
     z-index: 2;
 }
+/*If need to change icon and label coordinates, change in the CSS here after identifying the corresponding area number */
 .map li#area9 {
     top: 423px;
     left: 303px;
