@@ -406,6 +406,7 @@ form,fieldset{
     left: 303px;
     z-index: 1;
 }
+
 .map li#area9:after{
     content: "Peru";
     position: absolute;
@@ -541,6 +542,7 @@ form,fieldset{
     right: 222px;
     z-index: 1;
 }
+
 .map li#area19:after{
     content: "Indonesia";
     position: absolute;
