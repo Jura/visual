@@ -439,7 +439,7 @@ form,fieldset{
     background-position:  0 0;
 }
 .map li#area18 a{ 
-    background-image:url(../images/ico-fisheries.svg); 
+    background-image:url(../images/ico-cashmere.svg); 
     background-position:  0 0;
 }
 .map li#area19 a{ 
@@ -467,6 +467,9 @@ form,fieldset{
 }
 .map li#area4:hover a,
 .map li#area17:hover a{
+    background-position: 0px -22px;
+}
+.map li#area18:hover a{
     background-position: 0px -22px;
 }
 .map li#area2:hover a{
@@ -695,9 +698,22 @@ form,fieldset{
     bottom: -1px;
 }
 .map li#area18 {
-    top: 354px;
-    right: 192px;
+    top: 150px;
+    right: 210px;
     z-index: 2;
+}
+.map li#area18:after{
+    content: "Mongolia";
+    position: absolute;
+    border: 1px solid #0061AD;
+    top: -1px;
+    right: 86.7%;
+    z-index: 1;
+    color: #0061AD;
+    text-indent: initial;
+    padding: 9px 10px;
+    border-right: none;
+    bottom: -1px;
 }
 .map li#area19 {
     top: 354px;
