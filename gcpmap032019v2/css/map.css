@@ -110,7 +110,7 @@ form,fieldset{
 }
 .ico-infos-holder ul li#area1 a{ 
     background-image:url(../images/ico-fisheries.svg); 
-    
+    background-position: 0px 0px;
 }
 .ico-infos-holder ul li#area2 a{ 
     background-image:url(../images/ico-pineapple.svg); 
