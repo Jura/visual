@@ -97,19 +97,20 @@ form,fieldset{
 .ico-infos-holder ul li a{
     display: block;
     height: 100%;
+    border-radius: 100%;
     overflow:hidden;
     background-repeat:no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     margin: 0 auto;
-    cursor: pointer;
+    
 }
 .ico-infos-holder ul li:hover{
     background: #0061AD;
 }
 .ico-infos-holder ul li#area1 a{ 
     background-image:url(../images/ico-fisheries.svg); 
-    background-position: 0px 0px;
+    
 }
 .ico-infos-holder ul li#area2 a{ 
     background-image:url(../images/ico-pineapple.svg); 
@@ -145,7 +146,7 @@ form,fieldset{
     background-position: 0px -30px;
 }
 .ico-infos-holder ul li#area1:hover a{
-    background-position: 0px -21px;
+   
 }
 .ico-infos-holder ul li#area3:hover a{
     background-position: 0px -28px;
