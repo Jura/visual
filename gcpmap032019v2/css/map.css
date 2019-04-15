@@ -150,7 +150,7 @@ form,fieldset{
     background-position: 0px -30px;
 }
 .ico-infos-holder ul li#area1:hover a{
-   
+   background-position: 0px -28px; 
 }
 .ico-infos-holder ul li#area3:hover a{
     background-position: 0px -28px;
@@ -162,7 +162,7 @@ form,fieldset{
     background-position: 0 -28px;
 }
 .ico-infos-holder ul li#area18:hover a{
-    background-position: 0px -24px;
+    background-position: 0px -28px;
 }
 .ico-infos-holder ul li#area3:after{
     content: "Palm Oil";
@@ -213,7 +213,7 @@ form,fieldset{
 .ico-infos-holder .ico-infos li#area11,
 .ico-infos-holder .ico-infos li#area3,
 .ico-infos-holder .ico-infos li#area5,
-.ico-infos-holder .ico-infos li#area18{
+{
     top: inherit;
     left: inherit;
 }
@@ -325,7 +325,7 @@ form,fieldset{
     z-index: 1;
     color: #0061AD;
     text-indent: initial;
-    padding: 9px 10px 8px;
+    padding: 9px 10px;
     border-left: none;
     bottom: -1px;
 }
