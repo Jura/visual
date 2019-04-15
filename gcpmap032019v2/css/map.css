@@ -136,6 +136,10 @@ form,fieldset{
     background-image:url(../images/ico-soy.svg); 
     background-position: 0px 0px;
 }
+.ico-infos-holder ul li#area18 a{ 
+    background-image:url(../images/ico-cashmere.svg); 
+    background-position: 0px 0px;
+}
 .ico-infos-holder ul li#area12:hover a{
     background-position: 0px -24px;
 }
@@ -157,7 +161,9 @@ form,fieldset{
 .ico-infos-holder ul li#area11:hover a{
     background-position: 0 -28px;
 }
-
+.ico-infos-holder ul li#area18:hover a{
+    background-position: 0px -24px;
+}
 .ico-infos-holder ul li#area3:after{
     content: "Palm Oil";
     position: absolute;
@@ -206,7 +212,8 @@ form,fieldset{
 .ico-infos-holder .ico-infos li#area6,
 .ico-infos-holder .ico-infos li#area11,
 .ico-infos-holder .ico-infos li#area3,
-.ico-infos-holder .ico-infos li#area5{
+.ico-infos-holder .ico-infos li#area5,
+.ico-infos-holder .ico-infos li#area18{
     top: inherit;
     left: inherit;
 }
@@ -296,6 +303,20 @@ form,fieldset{
 }
 .ico-infos-holder .ico-infos li#area1:after{
     content: "Fisheries";
+    position: absolute;
+    border: 1px solid #0061AD;
+    top: -1px;
+    left: 86.7%;
+    right: auto;
+    z-index: 1;
+    color: #0061AD;
+    text-indent: initial;
+    padding: 9px 10px 8px;
+    border-left: none;
+    bottom: -1px;
+}
+.ico-infos-holder .ico-infos li#area18:after{
+    content: "Cashmere";
     position: absolute;
     border: 1px solid #0061AD;
     top: -1px;
