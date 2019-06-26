@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Ygritte. Your witty support buddy.</title>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <style>
+      html,
+      body {
+        height: 100%
+      }
+
+      body {
+        margin: 0
+      }
+
+      #webchat {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="webchat" role="main"></div>
+    <script>
+      window.WebChat.renderWebChat({
+        directLine: window.WebChat.createDirectLine({
+          secret: 'QsKuGhQZsjQ.N9kG1hjsFfFnVbfSMV4rZgJgbgYf0aCA18891nLZwZk',
+          websocket: true
+        }),
+        styleOptions: {
+          hideUploadButton: true,
+          botAvatarImage: '//bot-framework.azureedge.net/bot-icons-v1/ygritte-bot_CzT2AyCoCC08GZiUdAROFEd4YI4tB4tHCgIDSA5OFCpECBZ.png'
+        }
+
+      }, document.getElementById('webchat'));
+
+      document.querySelector('#webchat > *').focus();
+    </script>
+  </body>
+
+</html>
