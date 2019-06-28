@@ -1130,6 +1130,10 @@ td.valuetd {position: static;}
     .explore-text{font-size: 93px !important}
     .stories-text{font-size: 90px}
     .sec3-arrow{ top: 37%; left: 70%}
+    .country_details.tile__content.country_details--active {
+      top: 0 !important;
+      height: 100% !important;
+    }
     
 }
 @media (max-width: 767.98px) {
