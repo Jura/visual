@@ -1,0 +1,257 @@
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/icr3zpi.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+        <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/mapdata/countries/lb/lb-all.js"></script>
+
+        <style>
+            .highcharts-title {
+                display: none;
+            }
+
+            .highcharts-credits tspan {
+                display: none;
+            }
+
+            .highcharts-legend {
+                displaY: none;
+            }
+
+            .highcharts-anchor,
+            .highcharts-button-symbol {
+                display: none;
+            }
+
+            /* @font-face {
+                font-family: 'Proximabold';
+                src: url('fonts/Proxima Nova Alt Bold.otf');
+            }
+            @font-face {
+                font-family: 'Proximalight';
+                src: url('fonts/Proxima Nova Alt Light.otf');
+            } */
+            h2,
+            h3,
+            h6 {
+                font-weight: 700;
+                color: black;
+            }
+
+            p,
+            li {
+                color: grey;
+            }
+
+            html {
+                font-family: proxima-nova, sans-serif;
+                font-weight: 300;
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+            }
+
+            #tbl {
+                display: block;
+            }
+
+            td {
+                font-size: 15px;
+            }
+
+            #container {
+                padding-top: 40px;
+            }
+
+            .list-group-item {
+                border-bottom: none;
+                border-right: none;
+                border-left: none;
+            }
+
+        </style>
+        <script>
+            function showdata() {
+                document.getElementById("#tbl").style.display = "block";
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-5 col-12">
+
+                    <object data="map.svg" type="image/svg+xml">
+                        <img src="map.svg" />
+                    </object>
+
+                </div>
+
+                <div class="col-sm-7 col-12">
+
+
+                    <div class="row">
+
+                        <div class="col-sm-8 col-12">
+                            <h3 style="text-align:center;">Mount Lebanon Governorate</h3>
+                            <ul class="list-group">
+                                <li style="text-align:center" class="list-group-item">
+                                    City 1
+                                    <br>
+
+                                    <button class="btn btn-submit btn-sm"><i
+                                            class="glyphicon glyphicon-download-alt"></i>Download</button>
+                                </li>
+                                <li style="text-align:center" class="list-group-item">
+                                    City 2
+                                    <br>
+
+                                    <button class="btn btn-submit btn-sm"><i
+                                            class="glyphicon glyphicon-download-alt"></i>Download</button>
+                                </li>
+                                <li style="text-align:center" class="list-group-item">
+                                    City 3
+                                    <br>
+
+                                    <button class="btn btn-submit btn-sm"><i
+                                            class="glyphicon glyphicon-download-alt"></i>Download</button>
+                                </li>
+                                <li style="text-align:center" class="list-group-item">
+                                    City 4
+                                    <br>
+
+                                    <button class="btn btn-submit btn-sm"><i
+                                            class="glyphicon glyphicon-download-alt"></i>Download</button>
+                                </li>
+                                <li style="text-align:center" class="list-group-item">
+                                    City 5
+                                    <br>
+
+                                    <button class="btn btn-submit btn-sm"><i
+                                            class="glyphicon glyphicon-download-alt"></i>Download</button>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                        <div id="tbl" class="col-sm-4 col-12">
+                            <h3 style="text-align:center;">Lorem Ipsum</h3>
+
+                            <table class="table table-hover">
+
+                                <tbody>
+                                    <tr>
+                                        <th>workshop</th>
+                                        <td>1/11/2019</td>
+                                        <td><button class="btn btn-submit btn-sm"><i
+                                                    class="glyphicon glyphicon-download-alt"></i>Download</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>workshop</th>
+                                        <td>1/11/2019</td>
+                                        <td><button class="btn btn-submit btn-sm"><i
+                                                    class="glyphicon glyphicon-download-alt"></i>Download</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>workshop</th>
+                                        <td>1/11/2019</td>
+                                        <td><button class="btn btn-submit btn-sm"><i
+                                                    class="glyphicon glyphicon-download-alt"></i>Download</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>workshop</th>
+                                        <td>1/11/2019</td>
+                                        <td><button class="btn btn-submit btn-sm"><i
+                                                    class="glyphicon glyphicon-download-alt"></i>Download</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>workshop</th>
+                                        <td>1/11/2019</td>
+                                        <td><button class="btn btn-submit btn-sm"><i
+                                                    class="glyphicon glyphicon-download-alt"></i>Download</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>workshop</th>
+                                        <td>1/11/2019</td>
+                                        <td><button class="btn btn-submit btn-sm"><i
+                                                    class="glyphicon glyphicon-download-alt"></i>Download</button></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>workshop</th>
+                                        <td>1/11/2019</td>
+                                        <td><button class="btn btn-submit btn-sm"><i
+                                                    class="glyphicon glyphicon-download-alt"></i>Download</button></td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            // Prepare demo data
+            // Data is joined to map using value of 'hc-key' property by default.
+            // See API docs for 'joinBy' for more info on linking data and map.
+            var data = [
+                ['lb-bi', 0],
+                ['lb-as', 1],
+                ['lb-ba', 2],
+                ['lb-jl', 3],
+                ['lb-na', 4],
+                ['lb-ja', 5]
+            ];
+
+            // Create the chart
+            Highcharts.mapChart('container', {
+                chart: {
+                    map: 'countries/lb/lb-all'
+                },
+
+
+
+                colorAxis: {
+                    min: 0
+                },
+
+                series: [{
+                    data: data,
+                    name: 'Random data',
+                    states: {
+                        hover: {
+                            color: 'grey'
+                        }
+                    },
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}'
+                    }
+                }]
+            });
+
+        </script>
+    </body>
+
+</html>
