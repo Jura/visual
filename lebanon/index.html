@@ -312,7 +312,6 @@
 				max-width: 400px;
 				padding: 0;
 				background: #fff;
-				box-shadow: 0 0 10px rgba(0,0,0,0.5);
 				overflow-y: auto;
 				overflow-x: hidden;
 				position: fixed;
@@ -383,7 +382,7 @@
     			<ul class="list-group">';
     	}
     
-    	prepareListItem(city, url, date, type){
+    	prepareListItem(city, url, date, type, assetName){
     		if(city){
     			if(!this.firstRow){
     				this.html += '</div></ul></li>';
@@ -405,7 +404,7 @@
     
     		if(type != 'ZIP')
     		{
-    			var heading = '<strong class="heading">All in Report</strong>';
+    			var heading = '<strong class="heading">' + assetName + '</strong>';
     			var time = '<time datetime="'+date+'">'+date+'</time>';
     		}
     		else
@@ -614,7 +613,7 @@
             if(item[0] != '')
         		setGovernate = item[0];
         	if(setGovernate == governate)
-        		builder.prepareListItem(item[1], item[4], item[6], item[2]);
+        		builder.prepareListItem(item[1], item[4], item[6], item[2], item[3]);
           }
         builder.returnListItem();
       }
@@ -1328,4 +1327,12 @@
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
 </body>
-</html>
+</html>/>
+							<path class="st2" d="M221.7,551.6v3.7h3.9v-3.7h1.7v9.3h-1.7v-4.1h-3.9v4.1H220v-9.3H221.7z"/>
+						</g>
+					</g>
+					<g>
+						<g>
+							<path class="st2" d="M403.5,207.3c0.5-0.1,1.5-0.2,2.5-0.2c1.2,0,2,0.2,2.6,0.6c0.6,0.3,1,0.9,1,1.7c0,0.9-0.5,1.6-1.5,2v0
+					c1,0.2,1.9,1,1.9,2.3c0,0.8-0.4,1.5-0.9,1.9c-0.7,0.6-1.7,0.9-3.4,0.9c-0.9,0-1.6-0.1-2.1-0.1V207.3z M405.2,210.9h0.9
+					c1.2,0,1.8-0
