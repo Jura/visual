@@ -195,21 +195,21 @@
 		}
 		#back_btn {
 			width: 100%;
-			color: #0068b0;
-			background: #000;
+			color: #fff;
+			background: #0068b0;
 			display: none;
 			border-radius: 0;
 		}
 		#back_btn:hover {
-			color: ##0068b0;
+			color: #fff;
 		}
 		.btn-back {
 			float: left;
-			color: #0068b0;
-			background: #000;
+			color: #fff;
+			background: #0068b0;
 		}
 		.btn-back:hover {
-			color: #0068b0;
+			color: #fff;
 		}
 		.drop-active > .inner-dropdown {
 			transform: translateX(0);
@@ -406,11 +406,12 @@
     		{
     			var heading = '<strong class="heading">' + assetName + '</strong>';
     			var time = '<time datetime="'+date+'">'+date+'</time>';
+			
     		}
     		else
     		{
     			var heading = '<strong class="heading">download all</strong>';
-    			var time = 'nothing';
+    			var time = '';
     		}
     
     		this.html += '<li class="' + (fa == 'fa-download' ? 'zip-file' : '') + '">\
