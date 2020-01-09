@@ -508,7 +508,7 @@
           });
         $('path').click(function() {
         
-         if ($(window).width() <= 767) {  
+         if ($(window).width() <= 500) {  
     
                 //$("#map_svg").hide();
                	jQuery('body').addClass('nav-active');
@@ -521,7 +521,7 @@
                $("#map_svg").show();
            }
         var id=this.id;
-        if ($(window).width()<= 767) {  
+        if ($(window).width()<= 500) {  
              $("#back_btn").show();
              $("#bg1_map").css("background-image", "url('map.PNG')");
              $("#bg1_map").css("background-repeat", "no-repeat");
