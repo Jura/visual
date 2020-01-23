@@ -1,9 +1,9 @@
+
 <!DOCTYPE html>
 <html>
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -184,7 +184,8 @@
 			border: none;
 			position: static;
 		}
-		.list-group-item first-child:hover {
+		.list-group-item p:hover
+		{
 			color: #72A5DB;
 		}
 		.list-group-item p {
@@ -417,9 +418,7 @@
     		}
     
     		this.html += '<li class="' + (fa == 'fa-download' ? 'zip-file' : '') + '">\
-    			
-
-	<a target="_blank" href="' + url + '">\
+    			<a target="_blank" href="' + url + '">\
     				<i class="fa '+ fa +'"></i>\
     				'+ heading+time + '\
     			</a>\
@@ -593,11 +592,12 @@
        * Print the names and majors of students in a sample spreadsheet:
        * https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
        */
+       //17YmWVxnFrOp3kpWXZ1Tj9No68MUQ-quKKsiFNy9a5R4
           var range = "";
             var rows=""
       function listMajors(governate) {
         gapi.client.sheets.spreadsheets.values.get({
-          spreadsheetId: '1uBb-qxmSxJS5jHc4zcpN1qx6uFjdSsuq1tBvEpAmfrM',
+          spreadsheetId: '1BwYgZ0JJDzaKzLp21_qNA1x1SRlbkYuUT2VI_h48unw', //'1uBb-qxmSxJS5jHc4zcpN1qx6uFjdSsuq1tBvEpAmfrM',
           range: 'Sheet1!A2:G',
         }).then(function(response) {
             
