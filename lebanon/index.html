@@ -1,17 +1,9 @@
+
 <!DOCTYPE html>
 <html>
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NC966N5');</script>
-<!-- End Google Tag Manager -->
-
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -19,13 +11,56 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<script src="https://code.highcharts.com/maps/highmaps.js"></script>
 	<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
 	<script src="https://code.highcharts.com/mapdata/countries/lb/lb-all.js"></script>
-	<link rel="stylesheet" href="https://use.typekit.net/icr3zpi.css">
 	<style type="text/css">
-
+		@import url("https://p.typekit.net/p.css?s=1&k=fju6tnt&ht=tk&f=139.140.173.174.175.176.31348.31349&a=3224315&app=typekit&e=css");
+		
+		@font-face {
+			font-family:"proxima-nova";
+			src:url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+			font-display:auto;
+			font-style:normal;
+			font-weight:700;
+		}
+		
+		@font-face {
+			font-family:"proxima-nova";
+			src:url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+			font-display:auto;
+			font-style:italic;
+			font-weight:700;
+		}
+		@font-face {
+			font-family:"proxima-nova";
+			src:url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+			font-display:auto;
+			font-style:normal;
+			font-weight:600;
+		}
+		@font-face {
+			font-family:"proxima-nova";
+			src:url("https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"),url("https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff"),url("https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("opentype");
+			font-display:auto;
+			font-style:italic;
+			font-weight:600;
+		}
+		@font-face {
+			font-family:"proxima-nova";
+			src:url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+			font-display:auto;
+			font-style:normal;
+			font-weight:400;
+		}
+		@font-face {
+			font-family:"proxima-nova";
+			src:url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+			font-display:auto;
+			font-style:italic;
+			font-weight:400;
+		}
 		body {
 			color: #000;
 			margin: 0;
-			font: 16px/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
+			font: 18px/1.2 "proxima-nova", Helvetica, Arial, sans-serif;
 		}
 		.st0 {
 			fill: white;
@@ -38,36 +73,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		}
 		.st2 { fill: #231F20; }
 		#region_akkar:hover {
-			fill: grey;
+			fill: #72A5DB;
 			cursor: pointer;
 		}
 		#region_bekaa:hover {
-			fill: grey;
+			fill: #72A5DB;
 			cursor: pointer;
 		}
 		#region_beirut:hover { }
 		#region_north:hover {
-			fill: grey;
+			fill: #72A5DB;
 			cursor: pointer;
 		}
 		#region_nabatieh:hover {
-			fill: grey;
+			fill: #72A5DB;
 			cursor: pointer;
 		}
 		#region_mount_lebanon:hover {
-			fill: grey;
+			fill: #72A5DB;
 			cursor: pointer;
 		}
 		#region_south:hover {
-			fill: grey;
+			fill: #72A5DB;
 			cursor: pointer;
 		}
 		#region_baalbek_hermel:hover {
-			fill: grey;
+			fill: #72A5DB;
 			cursor: pointer;
 		}
 		#region_bekka:hover {
-			fill: grey;
+			fill: #72A5DB;
 			cursor: pointer;
 		}
 		#cities_akkar,
@@ -117,7 +152,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		li {
 			font-weight: normal;
 		}
-		h3 { font-size: calc(10px + 0.5vw); }
+		h3 { font-size: calc(10px + 1vw); }
 		html {
 			font-family: Proximalight;
 			-ms-text-size-adjust: 100%;
@@ -127,8 +162,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			font-family: Proximalight;
 			display: block;
 		}
-		td { font-size: calc(10px + 0.3vw); }
-
+		td { font-size: calc(10px + 0.5vw); }
+		
 		tr {
 			background-color: #CBD9E6;
 			cursor: pointer;
@@ -149,6 +184,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			border: none;
 			position: static;
 		}
+		.list-group-item p:hover
+		{
+			color: #72A5DB;
+		}
 		.list-group-item p {
 			margin: 0;
 		}
@@ -161,7 +200,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		#back_btn {
 			width: 100%;
 			color: #fff;
-			background: #000;
+			background: #0068b0;
 			display: none;
 			border-radius: 0;
 		}
@@ -171,7 +210,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		.btn-back {
 			float: left;
 			color: #fff;
-			background: #000;
+			background: #0068b0;
 		}
 		.btn-back:hover {
 			color: #fff;
@@ -262,7 +301,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			font-size: 12px;
 			font-weight: normal;
 		}
-
+		
 		@media screen and (min-width: 768px) {
 			#back_btn {
 				display: none !important;
@@ -277,7 +316,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				max-width: 400px;
 				padding: 0;
 				background: #fff;
-				box-shadow: 0 0 10px rgba(0,0,0,0.5);
 				overflow-y: auto;
 				overflow-x: hidden;
 				position: fixed;
@@ -329,27 +367,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			}
 		}
 	</style>
-
-<script>
-
+      <script>
+      
       var map_name = "";
       var counter = 1;
       var setGovernate;
-
+      
     class Builder
     {
     	constructor(){
     		this.firstRow = true;
     		this.html = '';
     	}
-
+    	
     	initListItem(governate){
     		this.html += '<h3 style="text-align:center">' + governate +'</h3>\
     		<div class="cities">\
     			<ul class="list-group">';
     	}
-
-    	prepareListItem(city, url, date, type){
+    
+    	prepareListItem(city, url, date, type, assetName){
     		if(city){
     			if(!this.firstRow){
     				this.html += '</div></ul></li>';
@@ -361,17 +398,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     				<strong class="name">' + city + '</strong>\
     				<ul>';
     		}
-
+    
     		if(type == 'ZIP')
     			var fa = 'fa-download';
     		else if(type == 'DOC')
     			var fa = 'fa-file-word-o';
     		else if(type == 'XLSX')
     			var fa = 'fa-file-excel-o';
-
+		
+    		else if(type == 'PDF')
+    			var fa = 'fa-file-pdf-o';
+    
     		if(type != 'ZIP')
     		{
-    			var heading = '<strong class="heading">All in Report</strong>';
+    			var heading = '<strong class="heading">' + assetName + '</strong>';
     			var time = '<time datetime="'+date+'">'+date+'</time>';
     		}
     		else
@@ -379,18 +419,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     			var heading = '<strong class="heading">download all</strong>';
     			var time = '';
     		}
-
+    
     		this.html += '<li class="' + (fa == 'fa-download' ? 'zip-file' : '') + '">\
-    			<a href="' + url + '">\
+    			<a target="_blank" href="' + url + '">\
     				<i class="fa '+ fa +'"></i>\
     				'+ heading+time + '\
     			</a>\
     		</li>';
-
+    
     		if(this.firstRow)
     			this.firstRow = false;
     	}
-
+    
     	returnListItem(){
     		this.html += '</ul></div>';
     		$('#append-area').html(this.html);
@@ -398,16 +438,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     		$('body').css({'cursor': 'inherit'});
     	}
     }
-
+    
       $(function() {
 		var parentActiveClass = 'parent-active',
 		activeClass = 'drop-active';
-
+		
 		$(document).on('click', '.cities .list-group-item p', function(){
 			var self = jQuery(this),
 				selfParent = self.parent();
 				selfDrop = self.siblings('.inner-dropdown');
-
+			
 			selfParent.addClass(activeClass);
 			$('.cities').addClass(parentActiveClass);
 		})
@@ -419,10 +459,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			$('.cities .list-group-item').removeClass(activeClass);
 			$('.cities').removeClass(parentActiveClass);
 		});
-
-
+		 
+		 
          $('#btn_map_svg').click(function(){
-
+             
               $("#map_svg").hide();
               $("#btn_map_svg").hide();
               $("#cities_akkar").hide();
@@ -436,20 +476,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               $("#cities_north_mount").hide();
               $("#back_btn").show();
               $("#"+map_name).show();
-
+              
               $("#bg1_map").css("height", "1000px");
               $("#bg1_map").css("max-height", "1000px");
-
+              
               $("#bg2_map").css("height", "0px");
-
+            
               html ="";
             document.getElementById("tbll").innerHTML = html;
-
+             
           });
-
+          
            $('#back_btn').click(function(){
-
-
+                          
+						  
 			jQuery('body').removeClass('nav-active');
 			setTimeout(function(){
               $("#btn_map_svg").hide();
@@ -466,28 +506,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               $("#back_btn").hide();
               $("#"+map_name).hide();
               $("#bg1_map").css("height", "0px");
-
-
+              
+              
               html ="";
             document.getElementById("tbll").innerHTML = html;
 			}, 300);
           });
         $('path').click(function() {
-
-         if ($(window).width() <= 767) {
-
+        
+         if ($(window).width() <= 767) {  
+    
                 //$("#map_svg").hide();
                	jQuery('body').addClass('nav-active');
                 $("#btn_map_svg").show();
                 //$('body').css('background-image', 'url(map.PNG)');
 
-           }
+           }     
            else
            {
                $("#map_svg").show();
            }
         var id=this.id;
-        if ($(window).width()<= 767) {
+        if ($(window).width()<= 767) {  
              $("#back_btn").show();
              $("#bg1_map").css("background-image", "url('map.PNG')");
              $("#bg1_map").css("background-repeat", "no-repeat");
@@ -501,9 +541,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         //  	$('body').css({'cursor': 'inherit'});
         //  });
     });
-
+    
 });
-
+          
               // Client ID and API key from the Developer Console
       var CLIENT_ID = '1078964350739-lnhskv3cdl66mv6eu9oie4bhlj25u7th.apps.googleusercontent.com';
       var API_KEY = 'AIzaSyBtnMnjpqsMtJNppWOk3vA2KTmESz_Y3bM';
@@ -555,44 +595,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        * Print the names and majors of students in a sample spreadsheet:
        * https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
        */
+       //17YmWVxnFrOp3kpWXZ1Tj9No68MUQ-quKKsiFNy9a5R4
           var range = "";
             var rows=""
       function listMajors(governate) {
         gapi.client.sheets.spreadsheets.values.get({
-          spreadsheetId: '1uBb-qxmSxJS5jHc4zcpN1qx6uFjdSsuq1tBvEpAmfrM',
+          spreadsheetId: '1uBb-qxmSxJS5jHc4zcpN1qx6uFjdSsuq1tBvEpAmfrM', //'1uBb-qxmSxJS5jHc4zcpN1qx6uFjdSsuq1tBvEpAmfrM',
           range: 'Sheet1!A2:G',
         }).then(function(response) {
-
+            
           range = response.result;
           parseRange(range.values, governate);
-
+          
         }, function(response) {
           appendPre('Error: ' + response.result.error.message);
         });
       }
-
+      
       function parseRange(range, governate){
         var builder = new Builder();
         builder.initListItem(governate);
         range.forEach(parseArray);
-
+        
         function parseArray(item, index){
             if(item[0] != '')
         		setGovernate = item[0];
         	if(setGovernate == governate)
-        		builder.prepareListItem(item[1], item[4], item[6], item[2]);
+        		builder.prepareListItem(item[1], item[4], item[6], item[2], item[3]);
           }
         builder.returnListItem();
       }
-
-
+      
+          
     var city="";
        $(function() {
     $('p-').click(function() {
          city=this.id;
-
-        if ($(window).width() <= 767) {
-
+        
+        if ($(window).width() <= 767) {  
+    			
                 $("#"+map_name).hide();
                  $("#back_btn").hide();
                  $("#btn_map_svg").show();
@@ -601,153 +642,153 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                      $("#bg2_map").css("background-repeat", "no-repeat");
                      $("#bg2_map").css("height", "1000px");
                      $("#bg2_map").css("max-height", "1000px");
-
+    
            }
         rows=range.values.length;
-
-
+            
+            
           if (rows > 0) {
-
-
+              
+               
                 var cityindex="";
                 var starting_index_row="";
                 var ending_index_row="";
                 var coloumns=0;
                 var i=0;
               var j=0;
-
-
-              //fetch number of coloumns
+              
+              
+              //fetch number of coloumns 
                   for (i = 0; i < 1; i++) {
 
                    coloumns=range.values[i].length;
-
+                      
                 }
-
-
+              
+              
            //fetch Index of city coloumn
-
-            for(i=0;i<rows;i++)
+    
+            for(i=0;i<rows;i++)  
             {
-
-               for(j=0;j<coloumns;j++)
+                
+               for(j=0;j<coloumns;j++) 
                {
-
+                   
                    if(range.values[i][j]=="City")
                    {
-
+                
                        cityindex=j;
-
+                    
                    }
                }
-
+               
             }
-
-
-              //fetch starting index of city
-
-              for(i=0;i<rows;i++)
+              
+              
+              //fetch starting index of city 
+              
+              for(i=0;i<rows;i++)  
             {
-
+                
                 var specific_city=city;
-
+                
                 if(range.values[i][cityindex]==specific_city)
                 {
                     starting_index_row=i;
-
-
+                    
+                    
                 }
-
+               
             }
-
-
+            
+            
              // fetch ending  Index of city
-
+            
             if(starting_index_row!="")
             {
-
-
-                for(i=starting_index_row+1;range.values[i][cityindex]=="";i++)
+             
+             
+                for(i=starting_index_row+1;range.values[i][cityindex]=="";i++)  
                 {
-
+                    
                    ending_index_row=i;
-
+                    
                 }
-
-
-
-
+                
+                
+                
+                
                 html= "<h3 style='text-align:center;'>"+city+"</h3>";
-
+                
                 html += "<table><tbody>";
-
-
+                
+                 
                 html +="<a href='"+range.values[starting_index_row][cityindex+3]+"'><img src='folder.JPG'><i style='margin-left:15px;background-color:#82466C;color:white !important;' class='glyphicon glyphicon-download-alt btn btn-default btn-sm'><span style='font-family:Proximalight;color:white !important;'> Download All</span></i></a><br>";
-
-
-
+                
+          
+                
                 html += "<br><table class='table table-hover table-responsive' style='background-color:white'><tbody>";
-
-
+                
+                
                 for(i=starting_index_row+1;i<=ending_index_row;i++)
             {
-
+                
                        html += "<tr><td>";
-
-
+                            
+                             
                              if(range.values[i][cityindex+1]=="XLSX")
                              {
-
+                                
                                  html+="<img class='img-responsive' style='width:50%' src='excel.JPG'>";
-
+                                 
                              }
                              else if(range.values[i][cityindex+1]=="DOC")
                              {
-
+                                 
                                  html+="<img class='img-responsive' style='width:50%' src='word.JPG'>";
-
+                                
                              }
                              else if(range.values[i][cityindex+1]=="PDF")
                              {
                                  html+="<img class='img-responsive' style='width:50%' src='pdf.JPG'>";
-
+                              
                              }
-
-
+                           
+                            
                             html+="</td>";
                             html+="<td style='font-weight:bolder;'>"+ range.values[i][cityindex+2] +  "</td>";
-
+                            
                                html +="<td style='font-size: calc(5px + 0.5vw);'>";
                              if(range.values[i][cityindex+5])
                              {
-
+                                  
                                   html +=range.values[i][cityindex+5];
-
-                             }
+                                  
+                             } 
                             html+="</td>";
                             html +="<td>";
-
-
+                             
+                           
                             html+="<a href='"+range.values[i][cityindex+3];
-
+                                
                             html+= "' class='btn btn-default btn-sm' style='background-color:#82466C;'  ><i class='glyphicon glyphicon-download-alt' style='color:white'></i><span style='color:white;'> Download</span></a>";
-
+                            
                             html+="</td></tr>";
-
+                
             }
-
+             
                  html += "</tbody></table>";
-
+                
                 document.getElementById("tbll").innerHTML = html;
-
-
-
-
+           
+           
+             
+           
             }
             else
             {
                 html= "<h3 style='text-align:center;'>"+city+"</h3>";
-                if ($(window).width() <= 767) {
+                if ($(window).width() <= 767) { 
                 html +="<hr><p style='text-align:center;background-color:#CBD9E6'>No Record Found</p>";
                 document.getElementById("tbll").innerHTML = html;
                 }else
@@ -755,26 +796,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     html +="<hr><p style='text-align:center'>No Record Found</p>";
                     document.getElementById("tbll").innerHTML = html;
                 }
-
+                      
                   }
-
-
-
-          }
+                 
+              
+              
+          } 
             else {
             appendPre('No data found.');
           }
 
     });
        });
-
+      
       </script>
       </head>
       <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC966N5"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <div class="container-fluid">
     <div id="content"></div>
 	<div style="padding:0px;margin:0px;" class="row">
@@ -1270,13 +1307,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 		<!--/////////////////////////////////////////////////////////////////-->
-
-			<div style="padding:0px;margin:0px;">
+		
+			<div style="padding:0px;margin:0px;"> 
 						<!--style="background-image:url('map.svg');background-repeat: no-repeat;"-->
 				<div class="row" id="bg1_map">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-4"></div>
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="row">
+						<div class="row"> 
 							<div class="col-sm-12 col-xs-12" id="append-area">
 							</div>
 						</div>
@@ -1284,7 +1321,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 			<div  class="col-sm-4 col-xs-12" style="padding:0px;margin:0px;">
-				<div class="row" id="bg2_map">
+				<div class="row" id="bg2_map"> 
 					<!--style="background-image:url('map.svg');background-repeat: no-repeat;"-->
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-3"></div>
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-9" id="tbll"> </div>
@@ -1299,3 +1336,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </script>
 </body>
 </html>
+							<path class="st2" d="M221.7,551.6v3.7h3.9v-3.7h1.7v9.3h-1.7v-4.1h-3.9v4.1H220v-9.3H221.7z"/>
+						</g>
+					</g>
+					<g>
+						<g>
+							<path class="st2" d="M403.5,207.3c0.5-0.1,1.5-0.2,2.5-0.2c1.2,0,2,0.2,2.6,0.6c0.6,0.3,1,0.9,1,1.7c0,0.9-0.5,1.6-1.5,2v0
+					c1,0.2,1.9,1,1.9,2.3c0,0.8-0.4,1.5-0.9,1.9c-0.7,0.6-1.7,0.9-3.4,0.9c-0.9,0-1.6-0.1-2.1-0.1V207.3z M405.2,210.9h0.9
+					c1.2,0,1.8-0
