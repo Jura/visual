@@ -2,8 +2,16 @@
 <html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NC966N5');</script>
+<!-- End Google Tag Manager -->
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -11,52 +19,9 @@
 	<script src="https://code.highcharts.com/maps/highmaps.js"></script>
 	<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
 	<script src="https://code.highcharts.com/mapdata/countries/lb/lb-all.js"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/icr3zpi.css">
 	<style type="text/css">
-		@import url("https://p.typekit.net/p.css?s=1&k=fju6tnt&ht=tk&f=139.140.173.174.175.176.31348.31349&a=3224315&app=typekit&e=css");
-		
-		@font-face {
-			font-family:"proxima-nova";
-			src:url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-			font-display:auto;
-			font-style:normal;
-			font-weight:700;
-		}
-		
-		@font-face {
-			font-family:"proxima-nova";
-			src:url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
-			font-display:auto;
-			font-style:italic;
-			font-weight:700;
-		}
-		@font-face {
-			font-family:"proxima-nova";
-			src:url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
-			font-display:auto;
-			font-style:normal;
-			font-weight:600;
-		}
-		@font-face {
-			font-family:"proxima-nova";
-			src:url("https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"),url("https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff"),url("https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("opentype");
-			font-display:auto;
-			font-style:italic;
-			font-weight:600;
-		}
-		@font-face {
-			font-family:"proxima-nova";
-			src:url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-			font-display:auto;
-			font-style:normal;
-			font-weight:400;
-		}
-		@font-face {
-			font-family:"proxima-nova";
-			src:url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
-			font-display:auto;
-			font-style:italic;
-			font-weight:400;
-		}
+
 		body {
 			color: #000;
 			margin: 0;
@@ -163,7 +128,7 @@
 			display: block;
 		}
 		td { font-size: calc(10px + 0.3vw); }
-		
+
 		tr {
 			background-color: #CBD9E6;
 			cursor: pointer;
@@ -297,7 +262,7 @@
 			font-size: 12px;
 			font-weight: normal;
 		}
-		
+
 		@media screen and (min-width: 768px) {
 			#back_btn {
 				display: none !important;
@@ -364,25 +329,26 @@
 			}
 		}
 	</style>
-      <script>
-      
+
+<script>
+
       var map_name = "";
       var counter = 1;
       var setGovernate;
-      
+
     class Builder
     {
     	constructor(){
     		this.firstRow = true;
     		this.html = '';
     	}
-    	
+
     	initListItem(governate){
     		this.html += '<h3 style="text-align:center">' + governate +'</h3>\
     		<div class="cities">\
     			<ul class="list-group">';
     	}
-    
+
     	prepareListItem(city, url, date, type){
     		if(city){
     			if(!this.firstRow){
@@ -395,14 +361,14 @@
     				<strong class="name">' + city + '</strong>\
     				<ul>';
     		}
-    
+
     		if(type == 'ZIP')
     			var fa = 'fa-download';
     		else if(type == 'DOC')
     			var fa = 'fa-file-word-o';
     		else if(type == 'XLSX')
     			var fa = 'fa-file-excel-o';
-    
+
     		if(type != 'ZIP')
     		{
     			var heading = '<strong class="heading">All in Report</strong>';
@@ -413,18 +379,18 @@
     			var heading = '<strong class="heading">download all</strong>';
     			var time = '';
     		}
-    
+
     		this.html += '<li class="' + (fa == 'fa-download' ? 'zip-file' : '') + '">\
     			<a href="' + url + '">\
     				<i class="fa '+ fa +'"></i>\
     				'+ heading+time + '\
     			</a>\
     		</li>';
-    
+
     		if(this.firstRow)
     			this.firstRow = false;
     	}
-    
+
     	returnListItem(){
     		this.html += '</ul></div>';
     		$('#append-area').html(this.html);
@@ -432,16 +398,16 @@
     		$('body').css({'cursor': 'inherit'});
     	}
     }
-    
+
       $(function() {
 		var parentActiveClass = 'parent-active',
 		activeClass = 'drop-active';
-		
+
 		$(document).on('click', '.cities .list-group-item p', function(){
 			var self = jQuery(this),
 				selfParent = self.parent();
 				selfDrop = self.siblings('.inner-dropdown');
-			
+
 			selfParent.addClass(activeClass);
 			$('.cities').addClass(parentActiveClass);
 		})
@@ -453,10 +419,10 @@
 			$('.cities .list-group-item').removeClass(activeClass);
 			$('.cities').removeClass(parentActiveClass);
 		});
-		 
-		 
+
+
          $('#btn_map_svg').click(function(){
-             
+
               $("#map_svg").hide();
               $("#btn_map_svg").hide();
               $("#cities_akkar").hide();
@@ -470,20 +436,20 @@
               $("#cities_north_mount").hide();
               $("#back_btn").show();
               $("#"+map_name).show();
-              
+
               $("#bg1_map").css("height", "1000px");
               $("#bg1_map").css("max-height", "1000px");
-              
+
               $("#bg2_map").css("height", "0px");
-            
+
               html ="";
             document.getElementById("tbll").innerHTML = html;
-             
+
           });
-          
+
            $('#back_btn').click(function(){
-                          
-						  
+
+
 			jQuery('body').removeClass('nav-active');
 			setTimeout(function(){
               $("#btn_map_svg").hide();
@@ -500,28 +466,28 @@
               $("#back_btn").hide();
               $("#"+map_name).hide();
               $("#bg1_map").css("height", "0px");
-              
-              
+
+
               html ="";
             document.getElementById("tbll").innerHTML = html;
 			}, 300);
           });
         $('path').click(function() {
-        
-         if ($(window).width() <= 767) {  
-    
+
+         if ($(window).width() <= 767) {
+
                 //$("#map_svg").hide();
                	jQuery('body').addClass('nav-active');
                 $("#btn_map_svg").show();
                 //$('body').css('background-image', 'url(map.PNG)');
 
-           }     
+           }
            else
            {
                $("#map_svg").show();
            }
         var id=this.id;
-        if ($(window).width()<= 767) {  
+        if ($(window).width()<= 767) {
              $("#back_btn").show();
              $("#bg1_map").css("background-image", "url('map.PNG')");
              $("#bg1_map").css("background-repeat", "no-repeat");
@@ -535,9 +501,9 @@
         //  	$('body').css({'cursor': 'inherit'});
         //  });
     });
-    
+
 });
-          
+
               // Client ID and API key from the Developer Console
       var CLIENT_ID = '1078964350739-lnhskv3cdl66mv6eu9oie4bhlj25u7th.apps.googleusercontent.com';
       var API_KEY = 'AIzaSyBtnMnjpqsMtJNppWOk3vA2KTmESz_Y3bM';
@@ -596,20 +562,20 @@
           spreadsheetId: '1uBb-qxmSxJS5jHc4zcpN1qx6uFjdSsuq1tBvEpAmfrM',
           range: 'Sheet1!A2:G',
         }).then(function(response) {
-            
+
           range = response.result;
           parseRange(range.values, governate);
-          
+
         }, function(response) {
           appendPre('Error: ' + response.result.error.message);
         });
       }
-      
+
       function parseRange(range, governate){
         var builder = new Builder();
         builder.initListItem(governate);
         range.forEach(parseArray);
-        
+
         function parseArray(item, index){
             if(item[0] != '')
         		setGovernate = item[0];
@@ -618,15 +584,15 @@
           }
         builder.returnListItem();
       }
-      
-          
+
+
     var city="";
        $(function() {
     $('p-').click(function() {
          city=this.id;
-        
-        if ($(window).width() <= 767) {  
-    			
+
+        if ($(window).width() <= 767) {
+
                 $("#"+map_name).hide();
                  $("#back_btn").hide();
                  $("#btn_map_svg").show();
@@ -635,153 +601,153 @@
                      $("#bg2_map").css("background-repeat", "no-repeat");
                      $("#bg2_map").css("height", "1000px");
                      $("#bg2_map").css("max-height", "1000px");
-    
+
            }
         rows=range.values.length;
-            
-            
+
+
           if (rows > 0) {
-              
-               
+
+
                 var cityindex="";
                 var starting_index_row="";
                 var ending_index_row="";
                 var coloumns=0;
                 var i=0;
               var j=0;
-              
-              
-              //fetch number of coloumns 
+
+
+              //fetch number of coloumns
                   for (i = 0; i < 1; i++) {
 
                    coloumns=range.values[i].length;
-                      
+
                 }
-              
-              
+
+
            //fetch Index of city coloumn
-    
-            for(i=0;i<rows;i++)  
+
+            for(i=0;i<rows;i++)
             {
-                
-               for(j=0;j<coloumns;j++) 
+
+               for(j=0;j<coloumns;j++)
                {
-                   
+
                    if(range.values[i][j]=="City")
                    {
-                
+
                        cityindex=j;
-                    
+
                    }
                }
-               
+
             }
-              
-              
-              //fetch starting index of city 
-              
-              for(i=0;i<rows;i++)  
+
+
+              //fetch starting index of city
+
+              for(i=0;i<rows;i++)
             {
-                
+
                 var specific_city=city;
-                
+
                 if(range.values[i][cityindex]==specific_city)
                 {
                     starting_index_row=i;
-                    
-                    
+
+
                 }
-               
+
             }
-            
-            
+
+
              // fetch ending  Index of city
-            
+
             if(starting_index_row!="")
             {
-             
-             
-                for(i=starting_index_row+1;range.values[i][cityindex]=="";i++)  
+
+
+                for(i=starting_index_row+1;range.values[i][cityindex]=="";i++)
                 {
-                    
+
                    ending_index_row=i;
-                    
+
                 }
-                
-                
-                
-                
+
+
+
+
                 html= "<h3 style='text-align:center;'>"+city+"</h3>";
-                
+
                 html += "<table><tbody>";
-                
-                 
+
+
                 html +="<a href='"+range.values[starting_index_row][cityindex+3]+"'><img src='folder.JPG'><i style='margin-left:15px;background-color:#82466C;color:white !important;' class='glyphicon glyphicon-download-alt btn btn-default btn-sm'><span style='font-family:Proximalight;color:white !important;'> Download All</span></i></a><br>";
-                
-          
-                
+
+
+
                 html += "<br><table class='table table-hover table-responsive' style='background-color:white'><tbody>";
-                
-                
+
+
                 for(i=starting_index_row+1;i<=ending_index_row;i++)
             {
-                
+
                        html += "<tr><td>";
-                            
-                             
+
+
                              if(range.values[i][cityindex+1]=="XLSX")
                              {
-                                
+
                                  html+="<img class='img-responsive' style='width:50%' src='excel.JPG'>";
-                                 
+
                              }
                              else if(range.values[i][cityindex+1]=="DOC")
                              {
-                                 
+
                                  html+="<img class='img-responsive' style='width:50%' src='word.JPG'>";
-                                
+
                              }
                              else if(range.values[i][cityindex+1]=="PDF")
                              {
                                  html+="<img class='img-responsive' style='width:50%' src='pdf.JPG'>";
-                              
+
                              }
-                           
-                            
+
+
                             html+="</td>";
                             html+="<td style='font-weight:bolder;'>"+ range.values[i][cityindex+2] +  "</td>";
-                            
+
                                html +="<td style='font-size: calc(5px + 0.5vw);'>";
                              if(range.values[i][cityindex+5])
                              {
-                                  
+
                                   html +=range.values[i][cityindex+5];
-                                  
-                             } 
+
+                             }
                             html+="</td>";
                             html +="<td>";
-                             
-                           
+
+
                             html+="<a href='"+range.values[i][cityindex+3];
-                                
+
                             html+= "' class='btn btn-default btn-sm' style='background-color:#82466C;'  ><i class='glyphicon glyphicon-download-alt' style='color:white'></i><span style='color:white;'> Download</span></a>";
-                            
+
                             html+="</td></tr>";
-                
+
             }
-             
+
                  html += "</tbody></table>";
-                
+
                 document.getElementById("tbll").innerHTML = html;
-           
-           
-             
-           
+
+
+
+
             }
             else
             {
                 html= "<h3 style='text-align:center;'>"+city+"</h3>";
-                if ($(window).width() <= 767) { 
+                if ($(window).width() <= 767) {
                 html +="<hr><p style='text-align:center;background-color:#CBD9E6'>No Record Found</p>";
                 document.getElementById("tbll").innerHTML = html;
                 }else
@@ -789,22 +755,26 @@
                     html +="<hr><p style='text-align:center'>No Record Found</p>";
                     document.getElementById("tbll").innerHTML = html;
                 }
-                      
+
                   }
-                 
-              
-              
-          } 
+
+
+
+          }
             else {
             appendPre('No data found.');
           }
 
     });
        });
-      
+
       </script>
       </head>
       <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC966N5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="container-fluid">
     <div id="content"></div>
 	<div style="padding:0px;margin:0px;" class="row">
@@ -1300,13 +1270,13 @@
 				</div>
 			</div>
 		<!--/////////////////////////////////////////////////////////////////-->
-		
-			<div style="padding:0px;margin:0px;"> 
+
+			<div style="padding:0px;margin:0px;">
 						<!--style="background-image:url('map.svg');background-repeat: no-repeat;"-->
 				<div class="row" id="bg1_map">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-4"></div>
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="row"> 
+						<div class="row">
 							<div class="col-sm-12 col-xs-12" id="append-area">
 							</div>
 						</div>
@@ -1314,7 +1284,7 @@
 				</div>
 			</div>
 			<div  class="col-sm-4 col-xs-12" style="padding:0px;margin:0px;">
-				<div class="row" id="bg2_map"> 
+				<div class="row" id="bg2_map">
 					<!--style="background-image:url('map.svg');background-repeat: no-repeat;"-->
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-3"></div>
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-9" id="tbll"> </div>
